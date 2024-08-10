@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Xamia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="topPanel">
+				<div class="btn btn-drop" data-class="topPanel-left">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="topPanel-wrapper flex-c">
+					<div class="topPanel-left flex-c">
+						<ul class="nav">
+							<li><a href="/">Homepage</a></li>
+							<li><a href="">Downloads</a></li>
+							<li class="sub-menu"><a href="javascript:void(0)">Community</a>
+								<ul>
+									<li><a href="">Forum</a></li>
+									<li><a href="">Rankings</a></li>
+									<li><a href="">Administration</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div> <!-- topPanel-left -->
+					<div class="topPanel-right">
+						<a href="#register" class="sign-in open_modal">
+							Sign In / Registration
+						</a>
+					</div> <!-- topPanel-right -->
+				</div>
+			</div> <!-- topPanel -->
+			<div class="hand-animation">
+				<div class="light-hand"></div>
+				<div class="rune-hand"></div>
+			</div>
+			<div class="sparks">
+				<div class="spark_1"></div>
+				<div class="spark_2"></div>
+				<div class="spark_3"></div>
+				<div class="spark_4 spark-big"></div>
+			  </div>
+			<div class="logo">
+				<a href="" class="bright"><img src="images/logo.png" alt="Logo"></a>
+			</div>
+			<div class="online flex-c-c">
+				<div class="light-animation">
+					<div class="blue-light"></div>
+					<div class="yellow-light"></div>
+				</div>
+				<div class="onlineBlock">
+					Online <span>0</span>
+				</div>
+				<div class="onlineReg flex-c-c">
+					<div class="onlineReg-block onlineReg-block-player">
+						<span>0</span>
+						Players
+					</div>
+					<div class="onlineReg-block onlineReg-block-clans">
+						<span>0</span>
+						Guilds
+					</div>
+				</div>
+			</div> <!-- online -->
+			<div class="download">
+				<a href="" class="download-button bright">Download <span>Game client</span></a>
+				<div class="more-downloads flex-c-c">
+					<a href="" class="windows">Windows</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="topHomeBlocks flex-s">
+				<div class="newsSlider block-50">
+					<div class="swiper-container swiper-news">
+						<div class="swiper-wrapper">
+						  	<div class="swiper-slide">
+							  	<a href="#">
+									<img src="images/slider-1.jpg" alt="Slide">
+									<div class="swiper-news_info">
+										<span>Example Text</span>
+										<p>Example Text</p>
+									</div>
+							  	</a>
+						  	</div>
+						  	<div class="swiper-slide">
+								<a href="#">
+							  		<img src="images/slider-2.jpg" alt="Slide">
+							  		<div class="swiper-news_info">
+								  		<span>Example Text</span>
+								  	<p>Example Text</p>
+							 		 </div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-news-pagination">
+							 <!--  Add Pagination  -->
+							<div class="swiper-pagination"></div>
+							 <!--  Add Arrows  -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div> <!-- newsSlider -->
+				<div class="newsBlock block-50">
+					<div class="h2-title flex-s-c">
+						<span>Last News</span> <a href="">All News</a>
+					</div> <!-- h2-title -->
+					<div class="newsLink flex-s-c">
+						<div class="newsLink-info">
+							<a href="">Example Text</a>
+							<span>03 June 2023</span>
+						</div>
+						<a href="" class="newsLink-more"><span>Read More</span></a>
+					</div>
+					<div class="newsLink flex-s-c">
+						<div class="newsLink-info">
+							<a href="">Example Text</a>
+							<span>03 June 2023</span>
+						</div>
+						<a href="" class="newsLink-more"><span>Read More</span></a>
+					</div>
+					<div class="newsLink flex-s-c">
+						<div class="newsLink-info">
+							<a href="">Example Text</a>
+							<span>03 June 2023</span>
+						</div>
+						<a href="" class="newsLink-more"><span>Read More</span></a>
+					</div>
+				</div> <!-- newsBlock -->
+			</div> <!-- topHomeBlocks -->
+			<span class="line"></span>
+			<div class="mainHomeBlock flex-s">
+				<div class="rankings blockHome">
+					<div class="h2-title h2-title-table flex-s-c">
+						<span>Rankings</span> 
+						<div class="tabTable">
+							<a class="tabTable-button active" data-tab="players">Players</a> <a class="tabTable-button" data-tab="guilds">Guilds</a>
+						</div>
+					</div> <!-- h2-title -->
+					<div class="table tabTable-block active" id="players">
+						<div class="tableBlock">
+							<div class="tableBlock-title">
+								<div class="tableBlock-title_player">Player</div>
+								<div class="tableBlock-title_level">Level</div>
+								<div class="tableBlock-title_score">Score</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">1</div>
+								<div class="tableBlock-conten_name"><img src="images/chakr-icon.jpg" class="light-icon" alt=""> <a href="">Top1
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-purple">80</span></div>
+								<div class="tableBlock-conten_scr">16 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">2</div>
+								<div class="tableBlock-conten_name"><img src="images/assassin-icon.jpg" class="light-icon" alt=""><a href="">Top2
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-purple">79</span></div>
+								<div class="tableBlock-conten_scr">15 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">3</div>
+								<div class="tableBlock-conten_name"><img src="images/chakr-icon.jpg" class="light-icon" alt=""><a href="">Top3
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-purple">74</span></div>
+								<div class="tableBlock-conten_scr">14 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">4</div>
+								<div class="tableBlock-conten_name"><img src="images/necr-icon.jpg" class="light-icon" alt=""><a href="">Top4
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-blue">67</span></div>
+								<div class="tableBlock-conten_scr">14 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">5</div>
+								<div class="tableBlock-conten_name"><img src="images/chakr-icon.jpg" class="light-icon" alt=""><a href="">Top5
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-blue">64</span></div>
+								<div class="tableBlock-conten_scr">13 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">6</div>
+								<div class="tableBlock-conten_name"><img src="images/archer-icon.jpg" class="light-icon" alt=""><a href="">Top6
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-blue">60</span></div>
+								<div class="tableBlock-conten_scr">11 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">7</div>
+								<div class="tableBlock-conten_name"><img src="images/archer-icon.jpg" class="light-icon" alt=""><a href="">Top7
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">58</span></div>
+								<div class="tableBlock-conten_scr">9 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">8</div>
+								<div class="tableBlock-conten_name"><img src="images/assassin-icon.jpg" class="light-icon" alt=""><a href="">Top8
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">55</span></div>
+								<div class="tableBlock-conten_scr">8 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">9</div>
+								<div class="tableBlock-conten_name"><img src="images/necr-icon.jpg" class="light-icon" alt=""><a href="">Top9
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">54</span></div>
+								<div class="tableBlock-conten_scr">7 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">10</div>
+								<div class="tableBlock-conten_name"><img src="images/archer-icon.jpg" class="light-icon" alt=""><a href="">Top10
+									<div class="tablePopup">
+										<span class="tablePopup-title">Nickname</span>
+										<div class="tablePopup-ava"><img src="images/ava-popup.png" alt=""></div>
+										<div class="tablePopup-block">
+											<span>Icon Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Rank System:</span> <span>System</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Level:</span> <span>150</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Class:</span> <span>Class</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Play Time:</span> <span>18.02.2023</span>
+										</div>
+										<div class="tablePopup-block">
+											<span>Sex:</span> <span>Man</span>
+										</div>
+									</div>
+								</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-yellow">15</span></div>
+								<div class="tableBlock-conten_scr">2 373</div>
+							</div>
+						</div>
+						<div class="all-button">
+							<a href="" class="button">View All</a>
+						</div>
+					</div>
+					<div class="table tabTable-block" id="guilds">
+						<div class="tableBlock">
+							<div class="tableBlock-title">
+								<div class="tableBlock-title_player">Guid</div>
+								<div class="tableBlock-title_level">Level</div>
+								<div class="tableBlock-title_score">Score</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">1</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_1.png" alt=""> <a href="">Top1</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-purple">80</span></div>
+								<div class="tableBlock-conten_scr">16 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">2</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_2.png" alt=""><a href="">Top2</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-purple">79</span></div>
+								<div class="tableBlock-conten_scr">15 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">3</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_3.png" alt=""><a href="">Top3</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-purple">74</span></div>
+								<div class="tableBlock-conten_scr">14 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">4</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_4.png" alt=""><a href="">Top4</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-blue">67</span></div>
+								<div class="tableBlock-conten_scr">14 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">5</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_5.png" alt=""><a href="">Top5</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-blue">64</span></div>
+								<div class="tableBlock-conten_scr">13 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">6</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_1.png" alt=""><a href="">Top6</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-blue">60</span></div>
+								<div class="tableBlock-conten_scr">11 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">7</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_2.png" alt=""><a href="">Top7</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">58</span></div>
+								<div class="tableBlock-conten_scr">9 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">8</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_3.png" alt=""><a href="">Top8</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">55</span></div>
+								<div class="tableBlock-conten_scr">8 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">9</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_2.png" alt=""><a href="">Top9</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">55</span></div>
+								<div class="tableBlock-conten_scr">6 373</div>
+							</div>
+							<div class="tableBlock-content">
+								<div class="tableBlock-conten_number">10</div>
+								<div class="tableBlock-conten_name"><img src="images/rank-icon_1.png" alt=""><a href="">Top10</a></div>
+								<div class="tableBlock-conten_lvl"><span class="color-green">55</span></div>
+								<div class="tableBlock-conten_scr">3 373</div>
+							</div>
+						</div>
+						<div class="all-button">
+							<a href="" class="button">View All</a>
+						</div>
+					</div>
+				</div> <!-- rankings -->
+				<div class="forumHome blockHome">
+					<div class="h2-title h2-title-table flex-s-c">
+						<span>Forum Feed</span> <a href="">All News</a>
+					</div> <!-- h2-title -->
+					<div class="forumBlock-content">
+						<div class="forumBlock">
+							<div class="forumBlock-ava">
+								<img src="images/forum-ava_1.png" alt="">
+							</div>
+							<div class="forumBlock-text">
+								<a href="" class="forumBlock-text_link">Example Text</a>
+								<div class="forumBlock-text_info">
+									<span class="forumBlock-text_info-nick">by <a href="" title="Kitten_L2">Xamia</a></span> | 
+									<span class="forumBlock-text_info-date">Today at 10:23</span>
+									<span class="forumBlock-text_info-comments">32</span>
+								</div>
+							</div>
+						</div> <!-- forumBlock -->
+						<div class="forumBlock">
+							<div class="forumBlock-ava">
+								<img src="images/forum-ava_2.png" alt="">
+							</div>
+							<div class="forumBlock-text">
+								<a href="" class="forumBlock-text_link">Example Text</a>
+								<div class="forumBlock-text_info">
+									<span class="forumBlock-text_info-nick">by <a href="" title="Fighter-Pro">Xamia</a></span> | 
+									<span class="forumBlock-text_info-date">Today at 10:23</span>
+									<span class="forumBlock-text_info-comments">32</span>
+								</div>
+							</div>
+						</div> <!-- forumBlock -->
+						<div class="forumBlock">
+							<div class="forumBlock-ava">
+								<img src="images/forum-ava_3.png" alt="">
+							</div>
+							<div class="forumBlock-text">
+								<a href="" class="forumBlock-text_link">Example Text</a>
+								<div class="forumBlock-text_info">
+									<span class="forumBlock-text_info-nick">by <a href="" title="Very_Long_Nick_Name">Xamia</a></span> | 
+									<span class="forumBlock-text_info-date">Today at 10:23</span>
+									<span class="forumBlock-text_info-comments">32</span>
+								</div>
+							</div>
+						</div> <!-- forumBlock -->
+						<div class="forumBlock">
+							<div class="forumBlock-ava">
+								<img src="images/forum-ava_4.png" alt="">
+							</div>
+							<div class="forumBlock-text">
+								<a href="" class="forumBlock-text_link">Example Text</a>
+								<div class="forumBlock-text_info">
+									<span class="forumBlock-text_info-nick">by <a href="" title="Suzy">Xamia</a></span> | 
+									<span class="forumBlock-text_info-date">Today at 10:23</span>
+									<span class="forumBlock-text_info-comments">32</span>
+								</div>
+							</div>
+						</div> <!-- forumBlock -->
+						<div class="forumBlock">
+							<div class="forumBlock-ava">
+								<img src="images/forum-ava_1.png" alt="">
+							</div>
+							<div class="forumBlock-text">
+								<a href="" class="forumBlock-text_link">Example Text</a>
+								<div class="forumBlock-text_info">
+									<span class="forumBlock-text_info-nick">by <a href="" class="admin-group" title="Admin">Xamia</a></span> | 
+									<span class="forumBlock-text_info-date">Today at 10:23</span>
+									<span class="forumBlock-text_info-comments">32</span>
+								</div>
+							</div>
+						</div> <!-- forumBlock -->
+						<div class="forumBlock">
+							<div class="forumBlock-ava">
+								<img src="images/forum-ava_2.png" alt="">
+							</div>
+							<div class="forumBlock-text">
+								<a href="" class="forumBlock-text_link">Example Text</a>
+								<div class="forumBlock-text_info">
+									<span class="forumBlock-text_info-nick">by <a href="" title="Kitten_L2">Xamia</a></span> | 
+									<span class="forumBlock-text_info-date">Today at 10:23</span>
+									<span class="forumBlock-text_info-comments">32</span>
+								</div>
+							</div>
+						</div> <!-- forumBlock -->
+					</div> <!-- forumBlock-content -->
+				</div> <!-- forumHome -->
+				<div class="socHome">
+					<a href="#" class="socButton socYoutube">
+						YouTube
+						<span>Official Channel</span>
+					</a>
+					<a href="#" class="socButton socDiscord">
+						Discord
+						<span>Discussion Chat</span>
+					</a>
+					<a href="#" class="socButton socFacebook">
+						Facebook
+						<span>Official Group</span>
+					</a>
+					<div class="socBlock flex-c-c">
+						<a href="#" class="socBlock-guides socBlock-button">
+							Guides
+							<span>Info Center</span>
+						</a>
+						<a href="#" class="socBlock-forum socBlock-button">
+							Forum
+							<span>Community</span>
+						</a>
+					</div>
+				</div> <!-- socBlockHome -->
+			</div> <!-- mainHomeBlock -->
+			<div class="bigSlider">
+				<div class="slider slider-for">
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Warrior</li> <li>Mental</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_1.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Warrior</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Mental</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Weapon</li> <li>Magic</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Weapon</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_3.png" alt="Hero" class="slide-hero hero_3">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Magic</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Dagger</li> <li>Archer</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_1.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Dagger</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Archer</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Healer</li> <li>Dragon</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Healer</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_3.png" alt="Hero" class="slide-hero hero_3">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Dragon</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Warrior</li> <li>Mental</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_1.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Warrior</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Mental</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Weapon</li> <li>Magic</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Weapon</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_3.png" alt="Hero" class="slide-hero hero_3">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Magic</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Dagger</li> <li>Archer</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_1.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Dagger</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Archer</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+					<div class="slideFor">
+						<div class="tabs slideTabs">
+							<ul class="tabs-caption slide-tabs-caption">
+								<li class="active">Healer</li> <li>Dragon</li>
+							</ul>
+							<div class="tabs-content slideContent active">
+								<img src="images/hero_2.png" alt="Hero" class="slide-hero">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Healer</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content slideContent">
+								<img src="images/hero_3.png" alt="Hero" class="slide-hero hero_3">
+								<img src="images/hero-logo.png" alt="Hero Logo" class="hero-logo">
+								<div class="slideInfo">
+									<span class="slideInfo-name">Dragon</span>
+									<div class="slideInfo-text">
+										The Chanter can be explained in two words: commandment and conviction. It rigorously trains the body and mind to become skillful in healing, attacking, and enhancement magic. In addition to its magical abilities, it also possesses exceptional skills involving the use of the staff. The chanter uses mantra magic to inspire the morale of allies, and since it can strengthen abilities, it is the gathering center during battle.
+									</div>
+									<div class="slideInfo-stats">
+										<span class="slideInfo-stats_title">Basic Stats</span>
+										<div class="stats">
+											<span class="stats-name">Vitality</span>
+											<span class="stats-bar stat-green"><span style="max-width: 100%;"></span></span>
+											<span class="stats-number stat-green">100</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Intelligence</span>
+											<span class="stats-bar stat-blue"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-blue">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Strength</span>
+											<span class="stats-bar stat-red"><span style="max-width: 40%;"></span></span>
+											<span class="stats-number stat-red">40</span>
+										</div>
+										<div class="stats">
+											<span class="stats-name">Dexterity</span>
+											<span class="stats-bar stat-yellow"><span style="max-width: 70%;"></span></span>
+											<span class="stats-number stat-yellow">70</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- slideFo -->
+				</div>
+				<div class="slider slider-nav">
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-1.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Warrior
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-2.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Sura
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-3.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Ninja
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-4.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Shaman
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-1.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Warrior
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-2.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Sura
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-3.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Ninja
+						</div>
+					</div>
+					<div class="slideNav">
+						<div class="slideNav-img">
+							<img src="images/hero-4.png" alt="Hero">
+						</div>
+						<div class="slideNav-text">
+							Shaman
+						</div>
+					</div>
+				</div> <!-- slider-nav -->
+			</div> <!-- bigSlider -->
+			<span class="line"></span>
+			<div class="sliderGallery">
+				<div class="slider-gallery">
+					<div class="sliderImg"><a href=""><img src="images/img_1.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_2.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_3.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_4.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_1.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_2.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_3.jpg" alt="img_1"></a></div>
+					<div class="sliderImg"><a href=""><img src="images/img_4.jpg" alt="img_1"></a></div>
+				</div>
+			</div>
+		</main>
+	</div> <!-- wrapper -->
+	<footer>
+		<div class="wrapper">
+			<div class="footerMenu flex">
+				<div class="footerMenu-block">
+					<div class="h2-title flex-s-c">
+						<span>Information</span>
+					</div>
+					<ul class="f-menu">
+						<li><a href="">Terms of Services</a></li>
+					</ul>
+				</div>
+				<div class="footerMenu-block">
+					<div class="h2-title flex-s-c">
+						<span>How to Start</span>
+					</div>
+					<ul class="f-menu">
+						<li><a href="">Registration</a></li>
+						<li><a href="">Downloads</a></li>
+					</ul>
+				</div>
+				<div class="footerMenu-block">
+					<div class="h2-title flex-s-c">
+						<span>Community</span>
+					</div>
+					<ul class="f-menu">
+						<li><a href="">Forum</a></li>
+						<li><a href="">Rankings</a></li>
+						<li><a href="">Administration</a></li>
+					</ul>
+				</div>
+				<div class="footerMenu-block">
+					<div class="h2-title flex-s-c">
+						<span>Support</span>
+					</div>
+					<div class="e-mail">
+						<p>E-mail Support:</p>
+						<a href="#">support@xamia.bz</a>
+					</div>
+					<div class="f-soc-icons">
+						<a href="#" class="fb"></a>
+					</div>
+				</div>
+			</div> <!-- footerMenu -->
+			<span class="line"></span>
+			<div class="footerInfo">
+				<div class="footerInfo-block flex-s">
+					<div class="copy"><span>© 2023</span> <a href="">Xamia.bz</a><span>. All Rights Reserved.</span></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="rightBodyLinks">
+		<a href="#" class="r-wiki"><span><img src="images/wiki-img.png" alt=""></span>Guides</a>
+		<a href="#" class="r-shop"><span><img src="images/shop-img.png" alt=""></span>Item Shop</a>
+		<a href="#" class="r-forum"><span><img src="images/forum-img.png" alt=""></span>Forum</a>
+	</div>
+	<div class="toTop">
+		<span>Go to Top</span>
+	</div>
+
+	<div id="register" class="modal_div"> 
+		<span class="modal_close"></span>
+		<form>
+			<div class="modalContent">
+				<span class="modalTitle">Sign In</span>
+				<div class="fields">
+					<div class="fieldGroup">
+						<span>Login</span>
+						<input type="text">
+					</div>
+					<div class="fieldGroup">
+						<span>Password</span>
+						<input type="password">
+					</div>
+				</div> <!-- fields -->
+				<div class="enter flex-s-c">
+					<div class="enterLinks">
+						<p><a href="" class="forgot">Forgot Password?</a></p>
+						<p><a href="" class="sign">Sign Up</a></p>
+					</div>
+					<button class="button-blue">Sign In Now</button>
+				</div>
+			</div> <!-- modalContent -->
+		</form> 
+	</div>
+	<div id="overlay"></div>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/global.js"></script>
+</body>
+</html>
